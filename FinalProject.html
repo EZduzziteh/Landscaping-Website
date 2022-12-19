@@ -1,0 +1,301 @@
+
+<!-- 1. 
+*****Type lawn mowing and snow removal services and review minimum
+*****five websites. Keep copy of those website links.
+*****2. Create a very good looking lawn mowing and snow removal service
+*****website that includes the following features. It can be single page or
+*****multiple page. You can add different descriptive text and free
+*****images or media files as needed.
+*****a. Include a section to show an objective, mission and vision of
+*****this service provider company.
+*****b. Include different free images from internet to draw customer
+*****attraction.
+*****c. Include lawn and snow removal services promotion and
+*****special features if clients decide to work with this company
+*****d. Include formatted Pricing and offer details clear for clients
+*****e. Summary of payment alternatives such as cash or weekly
+monthly yearly installment etc.
+*****f. It should have interactive navigation menus. One of the
+*****navigation menu should be a drop down that says other
+*****Services. Provide other websites that you have visited on
+*****question one as a list of links here.
+*****g. Detail contact information of the company
+*****h. Lawn Maintenance Quote Request Form. When a user submit
+the form all user data should be displayed on the same page.
+The form should ask the age of a customer and verify it is
+adult. If client is not adult it should display correct age limit.
+Also all other user input should be validated.
+TECH1101 Winter 2022
+***i. Customer testimony at least 3                                  
+j. Makeup imaginary office and include map to this website
+*****k. Include footer. Inside put social link which will be redirected #
+(nowhere), copyright and your name detail.
+3. Use HTML, CSS, SASS and JS to build this project
+4. Proper project file organization is mandatory
+5. Add comment in your Javascript code
+Rubrics
+Your final submission will be assessed for:
+-file organization
+-code quality
+- included features such as different web components
+-completes such as covering most of the topics we learned in class
+-functionality such as working navigation, interactive feature from JS that can
+be user input verification, validation, popup message , calculation , warning,
+current date, estimated date etc
+
+
+
+
+
+
+references
+
+
+
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style/style.css">
+  <title>Great Green Landscaping Company</title>
+</head>
+
+
+<header>
+  Call us at 1(123-456-7890) Email us at GreatGreenLandCo@gmail.com
+
+
+  
+</header>
+
+<nav>
+  <ul>
+      <li ><a href="#Lawn_Maintenance" >Lawn Maintenance</a></li>
+      <li ><a href="#Snow_Removal" >Snow Removal</a></li>
+      <li ><a href="#Other_Services" >Other Services</a></li>
+      <li ><a href="#About_Us" >About Us</a></li>
+      <li ><a href="#Our_Office" >Our Office</a></li>
+      <li ><a href="#Customer_Reviews" >Customer Reviews</a></li>
+  </ul>
+</nav>
+
+
+<body>
+
+  <div class="Lawn_Maintenance" id="Lawn_Maintenance">
+    <h1>Lawn Maintenance</h1>
+    <button type="button" class="collapsible">More Info</button>
+    <div class="content">
+
+      <img src="https://cdn.vox-cdn.com/thumbor/c2wrwRSruHHwPzFTyocLPJbLGWE=/0x0:3522x2641/1200x900/filters:focal(0x0:3522x2641):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/19611172/Lawn_iStock-502848762.0.jpg" style="width:300px; height:225px ; float:right; margin-right:10%">
+     
+      <div id="maintenanceInfo" style="float: left ;">
+        <h3 >We handle the mowing, weedwacking and detailing of your yard so that you dont have to!</h3>
+        <h3 >For most locations we will use a ride-on lawn mower on the bulk of the lawn, and go around and do a second pass to clean it up using our weed wackers.</h3>
+        <h3 > We also handle cleanup when things get messy in the fall!</h3>
+        <h3>We Offer Weekly, bi-weekly and monthly services for both residential and commercial services</h3>
+      </div>
+
+      <img src=https://cdn2.toro.com/en/-/media/Images/Toro/product-details/Commercial/category-content/sfg-rotary-mowers/gm-sfg-productivity.ashx?la=en&hash=54C1B36A9B64B08707C5A433F87BB8813B11FD33 style="width:400px; height:275px; float:right; margin-right:10%">
+      
+  
+
+
+      <div class = "Residential_Mowing">
+        <h1>Residential Mowing</h1>
+        <h3>We charge a $30 flat rate for most residential lawns</h3>
+        <h3>Alternatively if you sign up for at least 10 sessions we drop this charge to $25!</h3>
+        
+        <button type="button" class="collapsible">Cost Calculator (Click Me) </button>
+        <div class="content">
+          <div class="Mowing_Quote_Calculator">
+        
+            <h1>Cost Calculator</h1>
+            <p>What is your age?</p>
+            <input id="m_age">
+            <p>How many times do you want us to mow your lawn each month?</p>
+            <input id="m_visitsPerMonth">
+            <p>How many months do you want to calculate for?</p>
+            <input id="m_monthsForQuote">
+            <button type="button" onclick="GetMowingQuote()">Get Estimate!</button>
+            <p id="m_quote">Your quote will appear here</p>
+          </div>
+        </div>
+    
+    
+      </div>
+      
+      <div class = "Commercial_Mowing">
+        <h1>Commercial Mowing</h1>
+        <h3>Commercially we charge 125$ per acre</h3>
+        <h3>Alternatively if you sign up for at least 10 sessions we drop this charge to $115!</h3>
+        
+      
+        <button type="button" class="collapsible">Cost Calculator (Click Me) </button>
+        <div class="content">
+          <div class="Commercial_Mowing_Calculator">
+            <h1>Cost Calculator</h1>
+            <p>What is your age?</p>
+            <input id="cm_age">
+            <p>How many acres do you want us to mow?</p>
+            <input id="cm_acresForQuote">
+            <p>How many times do you want us to mow your lawn each month?</p>
+            <input id="cm_visitsPerMonth">
+            <p>How many months do you want to calculate for?</p>
+            <input id="cm_monthsForQuote">
+            <button type="button" onclick="GetCommercialMowingQuote()">Get Estimate!</button>
+            <p id="cm_quote">Your quote will appear here</p>
+          </div>
+        </div>
+      
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="Snow_Removal" id="Snow_Removal">
+  <h1>Snow Removal</h1>
+    <button type="button" class="collapsible">More Info</button>
+    <div class="content">
+      
+
+      <img src="https://www.king.ca/sites/default/files/images/snow-plow006878-jpg.jpg" style="width:400px; height:225px; float:right; margin-right:10%">
+
+       
+       <h3 >We handle the clearing of your driveway and sidewalks so that you dont have to!</h3>
+       <h3 >For most locations we will use a snowblower, but we are not afraid to break out shovels for those hard-to-reach spots!</h3>
+       <h3 >We will clear your sidewalks as well and any walkways for your location</h3>
+       <h3>We Offer Weekly, bi-weekly and monthly services for both residential and commercial services</h3>
+
+       <img src=" https://www.snowblower.com/blog/wp-content/uploads/2017/01/Honda-HSS1332-Track-Action.jpg" style="width:300px; height:200px; float:right; margin-right:10%">
+      
+      <div class = "Residential_Removal">
+        <h1>Residential Snow Removal</h1>
+        <h3>We charge a $35 flat rate for most snow removal of most residential driveways</h3>
+        <h3>Alternatively if you sign up for at least 10 sessions we drop this charge to $30!</h3>
+    
+        <button type="button" class="collapsible">Cost Calculator (Click Me) </button>
+        <div class="content">
+          <div class="Snow_Quote_Calculator">
+            <h1>Cost Calculator</h1>
+            <p>What is your age?</p>
+            <input id="s_age">
+            <p>How many times do you want us to clear your driveway each month?</p>
+            <input id="s_visitsPerMonth">
+            <p>How many months do you want to calculate for?</p>
+            <input id="s_monthsForQuote">
+            <button type="button" onclick="GetSnowRemovalQuote()">Get Estimate!</button>
+            <p id="s_quote">Your quote will appear here</p>
+          </div>
+        </div>
+    
+    
+      </div>
+      
+  <div class = "Commercial_Snow_Removal">
+    <h1>Commercial Snow Removal</h1>
+    <h3>Commercially we charge 150$ per acre</h3>
+    <h3>Alternatively if you sign up for at least 10 sessions we drop this charge to $140!</h3>
+  
+    <button type="button" class="collapsible">Cost Calculator (Click Me) </button>
+    <div class="content">
+      <div class="Commercial_Snow_Calculator">
+        <h1>Cost Calculator</h1>
+        <p>What is your age?</p>
+        <input id="cs_age">
+        <p>How many acres do you want us to mow?</p>
+        <input id="cs_acresForQuote">
+        <p>How many times do you want us to mow your lawn each month?</p>
+        <input id="cs_visitsPerMonth">
+        <p>How many months do you want to calculate for?</p>
+        <input id="cs_monthsForQuote">
+        <button type="button" onclick="GetCommercialSnowRemovalQuote()">Get Estimate!</button>
+        <p id="cs_quote">Your quote will appear here</p>
+      </div>
+    </div>
+  
+    </div>
+
+
+    </div>
+  </div>
+  
+
+  
+  <div class="Other_Services" id="Other_Services">
+    <h1>Other Services</h1>
+    <button type="button" class="collapsible">More Info</button>
+    <div class="content">
+      <div>
+      <a href="https://cougarstonelawncare.com/?gclid=Cj0KCQjwmPSSBhCNARIsAH3cYgZB05FvMMvt-KTpIQ_u4AZOWoIQAr4lX-KfZ-qrGOqFE4eyEkyNIkMaAuoeEALw_wcB">Cougarstone Lawn Care</a>
+      </div>
+      <div>
+      <a href="https://www.allstarlandscaping.ca/">All Star Landscaping</a>
+      </div>
+      <div>
+      <a href="https://www.snowprocalgary.com/?gclid=Cj0KCQjwmPSSBhCNARIsAH3cYgbPQGXSxZ48-vhbTD7_4OBH7RUnemXQAMG_Hz_APPKkgGTgh3gl5osaAsC6EALw_wcB">Snow Pro Calgary</a>
+      </div>
+      <div>
+      <a href="https://airdriesnowclearing.ca/">Airdrie Snow Clearing</a>
+      </div>
+      <div>
+      <a href="https://ladybirdlawncare.ca/">Ladybird Lawn Care</a>
+      </div>
+
+
+
+
+    </div>
+
+
+  </div>
+
+  <div class="About_Us" id="About_Us">
+    <h1>About Us: </h1>
+    <h3>It is our goal make your life as easy as possible here at Great Green Landscaping.</h3>
+    <h3>We are fully commited to delivering quick and efficient service while striving for excellence.</h3>
+
+  </div>
+
+  <div class = "Our_Office" id= "Our_Office">
+    <h1>Our Office: </h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10024.264562194381!2d-114.07048345292333!3d51.08878687309522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716575875deec7%3A0x50d03cca1f11c83c!2sHighland%20Park%2C%20Calgary%2C%20AB!5e0!3m2!1sen!2sca!4v1650313445650!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="Customer_Reviews" id="Customer_Reviews">
+    <h1>Reviews: </h1>
+    <h3>5/5 "They do really great work, and they are in and out!" -John Johnson</h3>
+    <h3>5/5 "The prices are very reasonable." -The RV Store</h3>
+    <h3>5/5 "The staff was very friendly and it was super easy to set up scheduled maintenance" -Judy Mconall</h3>
+
+  </div>
+
+
+
+
+
+
+
+
+
+ 
+
+    
+
+
+
+<script src="scripts/code.js"></script>
+<script>
+  
+  </script>
+
+
+
+</body>
+
+
+<footer>
+  <p>Copyright Great Green Landscaping Co. 2022 Page Created by Sasha Gordon Greene. Check out our socials:  <a href="https://www.facebook.com/"> facebook </a><a href="https://twitter.com/"> twitter </a><a href="https://www.youtube.com/"> youtube </a> </p>
+</footer> 

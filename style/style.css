@@ -1,0 +1,208 @@
+nav {
+  background-color: #616161;
+  text-align: center;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: aqua;
+}
+
+nav ul {
+  margin-left: 15%;
+  margin-right: 15%;
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+nav li {
+  padding: 5%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #49be58;
+}
+
+header {
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: #23a86a;
+  font: "Courier New", Courier, monospace;
+  text-align: center;
+  color: white;
+}
+
+footer {
+  font-size: 12px;
+  text-align: center;
+  color: white;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: #23a86a;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #49be58;
+  color: #222425;
+}
+
+.Lawn_Maintenance {
+  background-color: #3d2424;
+  border: 10px solid #4d6d5a;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.Lawn_Maintenance h1 {
+  color: #d2dadf;
+}
+
+.Lawn_Maintenance .content {
+  background-color: #007736;
+  color: #222425;
+  size: 14px;
+}
+
+.Lawn_Maintenance .button {
+  background-color: #007736;
+  color: #222425;
+  size: 14px;
+}
+
+.Lawn_Maintenance .collapsible {
+  background-color: #007736;
+  color: #222425;
+  size: 14px;
+}
+
+.Snow_Removal {
+  background-color: #33a1bd;
+  border: 10px solid #4173bd;
+  padding: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.Snow_Removal h1 {
+  color: #4b5c66;
+}
+
+.Snow_Removal .content {
+  background-color: #cacaca;
+  color: #222425;
+  size: 14px;
+}
+
+.Snow_Removal .button {
+  background-color: #cacaca;
+  color: #222425;
+  size: 14px;
+}
+
+.Snow_Removal .collapsible {
+  background-color: #cacaca;
+  color: #222425;
+  size: 14px;
+}
+
+.Other_Services {
+  color: #222425;
+  background-color: #23a86a;
+  border: 10px solid #616161;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 20px;
+}
+
+.Other_Services h1 {
+  color: #222425;
+}
+
+.Other_Services .content {
+  background-color: #49be58;
+  color: #222425;
+  size: 14px;
+}
+
+.Other_Services .button {
+  background-color: #49be58;
+  color: #222425;
+  size: 14px;
+}
+
+.Other_Services .collapsible {
+  color: #222425;
+  size: 14px;
+}
+
+.About_Us {
+  color: #222425;
+  background-color: #23a86a;
+  border: 10px solid #616161;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 20px;
+}
+
+.Our_Office {
+  color: #222425;
+  background-color: #23a86a;
+  border: 10px solid #616161;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 20px;
+}
+
+.Customer_Reviews {
+  color: #222425;
+  background-color: #23a86a;
+  border: 10px solid #616161;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 20px;
+}
+
+.collapsible:hover {
+  background-color: #54b4a4;
+}
+/*# sourceMappingURL=style.css.map */
